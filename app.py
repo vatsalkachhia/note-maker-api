@@ -11,7 +11,7 @@ try:
     pytesseract.get_tesseract_version()
 except pytesseract.pytesseract.TesseractNotFoundError as e:
     print(e)
-    os.system('sudo apt install tesseract-ocr')
+    os.system('apt install tesseract-ocr')
 except Exception as e:
     print(e,type(e))
 
